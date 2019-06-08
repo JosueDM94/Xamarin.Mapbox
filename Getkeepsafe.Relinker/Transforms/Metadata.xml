@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Normalize the namespace for .NET -->
+    <attr path="/api/package[@name='com.getkeepsafe.relinker']" name="managedName">Getkeepsafe.Relinker</attr>
+    <attr path="/api/package[@name='com.getkeepsafe.relinker.elf']" name="managedName">Getkeepsafe.Relinker.Elf</attr>
+</metadata>

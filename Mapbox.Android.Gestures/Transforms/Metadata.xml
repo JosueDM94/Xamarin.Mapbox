@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Normalize the namespace for .NET -->
+    <attr path="/api/package[@name='com.mapbox.android.gestures']" name="managedName">Mapbox.Android.Gestures</attr>
+    
+    <!-- Error CS0225: The params parameter must be a single dimensional array -->
+    <attr path="/api/package[@name='com.mapbox.android.gestures']/class[@name='AndroidGesturesManager']/constructor[@name='AndroidGesturesManager' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.util.Set&lt;java.lang.Integer&gt;...']]/parameter[2]" name="managedType">params Java.Lang.Integer[]</attr>
+    <!-- Error CS0225: The params parameter must be a single dimensional array -->
+    <attr path="/api/package[@name='com.mapbox.android.gestures']/class[@name='AndroidGesturesManager']/method[@name='setMutuallyExclusiveGestures' and count(parameter)=1 and parameter[1][@type='java.util.Set&lt;java.lang.Integer&gt;...']]/parameter[1]" name="managedType">params Java.Lang.Integer[]</attr>
+</metadata>

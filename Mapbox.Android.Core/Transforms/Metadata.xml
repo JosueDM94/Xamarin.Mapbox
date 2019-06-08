@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Normalize the namespace for .NET -->
+    <attr path="/api/package[@name='com.mapbox.android.core']" name="managedName">Mapbox.Android.Core</attr>
+    <attr path="/api/package[@name='com.mapbox.android.core.location']" name="managedName">Mapbox.Android.Core.Location</attr>
+    <attr path="/api/package[@name='com.mapbox.android.core.permissions']" name="managedName">Mapbox.Android.Core.Permissions</attr>
+    <attr path="/api/package[@name='com.mapbox.android.core.connectivity']" name="managedName">Mapbox.Android.Core.Connectivity</attr>
+    <attr path="/api/package[@name='com.mapbox.android.core.crashreporter']" name="managedName">Mapbox.Android.Core.CrashReporter</attr>
+    <!-- Rename class Hanlder to Handler-->
+    <attr path="/api/package[@name='com.mapbox.android.core.crashreporter']/class[@name='MapboxUncaughtExceptionHanlder']" name="managedName">MapboxUncaughtExceptionHandler</attr>
+</metadata>

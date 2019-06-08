@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Normalize the namespace for .NET -->
+    <attr path="/api/package[@name='com.mapbox.geojson']" name="managedName">Mapbox.GeoJson</attr>
+    <attr path="/api/package[@name='com.mapbox.geojson.gson']" name="managedName">Mapbox.GeoJson.Gson</attr>
+    <attr path="/api/package[@name='com.mapbox.geojson.utils']" name="managedName">Mapbox.GeoJson.Utils</attr>
+    <attr path="/api/package[@name='com.mapbox.geojson.shifter']" name="managedName">Mapbox.GeoJson.Shifter</attr>
+    <attr path="/api/package[@name='com.mapbox.geojson.constants']" name="managedName">Mapbox.GeoJson.Constants</attr>
+    <attr path="/api/package[@name='com.mapbox.geojson.exception']" name="managedName">Mapbox.GeoJson.Exception</attr>
+    
+    <!--<remove-node path="/api/package[@name='com.mapbox.geojson']/interface[@name='CoordinateContainer']" />-->
+    
+    <!-- Error CS0535: 'BoundingBoxSerializer' does not implement interface member 'IJsonSerializer.Serialize(Object, IType, IJsonSerializationContext)' -->
+    <attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='BoundingBoxSerializer']/method[@name='serialize' and count(parameter)=3 and parameter[1][@type='com.mapbox.geojson.BoundingBox'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonSerializationContext']]/parameter[1]"
+          name="managedType">Java.Lang.Object</attr>
+    
+    <!-- Error CS0535: 'PointSerializer' does not implement interface member 'IJsonSerializer.Serialize(Object, IType, IJsonSerializationContext)' -->
+    <attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='PointSerializer']/method[@name='serialize' and count(parameter)=3 and parameter[1][@type='com.mapbox.geojson.Point'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonSerializationContext']]/parameter[1]"
+          name="managedType">Java.Lang.Object</attr>
+    
+    <!-- Error CS0534: 'GeometryTypeAdapter' does not implement inherited abstract member 'TypeAdapter.Write(JsonWriter, Object)' -->
+    <attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.google.gson.stream.JsonReader']]"
+          name="managedReturn">Java.Lang.Object</attr>
+    
+    <attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.google.gson.stream.JsonWriter'] and parameter[2][@type='com.mapbox.geojson.Geometry']]/parameter[2]"
+          name="managedType">Java.Lang.Object</attr>
+    
+    <!-- Error CS0534: 'GeometryTypeAdapter' does not implement inherited abstract member 'TypeAdapter.Read(JsonReader)'-->
+    <!--<attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.google.gson.stream.JsonReader']]/parameter[1]"
+          name="managedType">Java.Lang.Object</attr>-->
+    
+    <!-- Error CS0738: 'GeometryDeserializer' does not implement interface member 'IJsonDeserializer.Deserialize(JsonElement, IType, IJsonDeserializationContext)'. 'GeometryDeserializer.Deserialize(JsonElement, IType, IJsonDeserializationContext)' cannot implement 'IJsonDeserializer.Deserialize(JsonElement, IType, IJsonDeserializationContext)' because it does not have the matching return type of 'Object' -->
+    <!--<attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryDeserializer']/method[@name='deserialize' and count(parameter)=3 and parameter[1][@type='com.google.gson.JsonElement'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonDeserializationContext']]"
+          name="managedReturn">Java.Lang.Object</attr>-->
+    
+    <!-- Error CS0534: 'CoordinateTypeAdapter' does not implement inherited abstract member 'TypeAdapter.Write(JsonWriter, Object)' -->
+    <!--<attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='CoordinateTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.google.gson.stream.JsonWriter'] and parameter[2][@type='java.util.List&lt;java.lang.Double&gt;']]/parameter[2]"
+          name="managedType">Java.Lang.Object</attr>-->
+    
+    <!-- Error CS0534: 'CoordinateTypeAdapter' does not implement inherited abstract member 'TypeAdapter.Read(JsonReader)' -->
+    <!--<attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='CoordinateTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.google.gson.stream.JsonReader']]/parameter[]"-->
+</metadata>

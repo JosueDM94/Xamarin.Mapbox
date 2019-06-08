@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Normalize the namespace for .NET -->
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk']" name="managedName">Mapbox.Mapboxsdk</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.log']" name="managedName">Mapbox.Mapboxsdk.Log</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.net']" name="managedName">Mapbox.Mapboxsdk.Net</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.http']" name="managedName">Mapbox.Mapboxsdk.Http</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.lint']" name="managedName">Mapbox.Mapboxsdk.Lint</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.text']" name="managedName">Mapbox.Mapboxsdk.Text</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']" name="managedName">Mapbox.Mapboxsdk.Maps</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.utils']" name="managedName">Mapbox.Mapboxsdk.Utils</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.style']" name="managedName">Mapbox.Mapboxsdk.Style</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.module']" name="managedName">Mapbox.Mapboxsdk.Module</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.camera']" name="managedName">Mapbox.Mapboxsdk.Camera</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.storage']" name="managedName">Mapbox.Mapboxsdk.Storage</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.offline']" name="managedName">Mapbox.Mapboxsdk.Offline</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.geometry']" name="managedName">Mapbox.Mapboxsdk.Geometry</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.location']" name="managedName">Mapbox.Mapboxsdk.Location</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.constants']" name="managedName">Mapbox.Mapboxsdk.Constants</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.exceptions']" name="managedName">Mapbox.Mapboxsdk.Exceptions</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.module.http']" name="managedName">Mapbox.Mapboxsdk.Module.Http</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.attribution']" name="managedName">Mapbox.Mapboxsdk.Attribution</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']" name="managedName">Mapbox.Mapboxsdk.Annotations</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.snapshotter']" name="managedName">Mapbox.Mapboxsdk.SnapShotter</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.style.types']" name="managedName">Mapbox.Mapboxsdk.Style.Types</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.style.light']" name="managedName">Mapbox.Mapboxsdk.Style.Light</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.style.layers']" name="managedName">Mapbox.Mapboxsdk.Style.Layers</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.style.sources']" name="managedName">Mapbox.Mapboxsdk.Style.Sources</attr>    
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps.renderer']" name="managedName">Mapbox.Mapboxsdk.Maps.Renderer</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.module.loader']" name="managedName">Mapbox.Mapboxsdk.Module.Loader</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.location.modes']" name="managedName">Mapbox.Mapboxsdk.Location.Modes</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.module.telemetry']" name="managedName">Mapbox.Mapboxsdk.Module.Telemetry</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.style.expressions']" name="managedName">Mapbox.Mapboxsdk.Style.Expressions</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps.renderer.egl']" name="managedName">Mapbox.Mapboxsdk.Maps.Renderer.Egl</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps.renderer.textureview']" name="managedName">Mapbox.Mapboxsdk.Maps.Renderer.TextureView</attr>
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps.renderer.glsurfaceview']" name="managedName">Mapbox.Mapboxsdk.Maps.Renderer.GLSurfaceView</attr>
+    
+    <!-- Error CS0225: The params parameter must be a single dimensional array -->
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolygonOptions']/method[@name='addHole' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;...']]/parameter[1]" name="managedType">params Mapbox.Mapboxsdk.Geometry.LatLng[]</attr>
+    
+    <!-- Error CS0111: Type 'PolygonOptions' already defines a member called 'AddHole' with the same parameter types -->
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolygonOptions']/method[@name='addHole' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;...']]" name="managedName">AddHoles</attr>
+    
+    <!-- Error CS0534: 'Marker' does not implement inherited abstract member 'Annotation.CompareTo(Object)'
+         Error CS0534: 'Polygon' does not implement inherited abstract member 'Annotation.CompareTo(Object)'
+         Error CS0534: 'Polyline' does not implement inherited abstract member 'Annotation.CompareTo(Object)'-->
+    <attr path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Annotation']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Annotation']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    
+    <!-- Error CS0534: 'FileUtils.CheckFileReadPermissionTask' does not implement inherited abstract member 'AsyncTask.DoInBackground(params Object[])' -->
+    <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.utils']/class[@name='FileUtils.CheckFileReadPermissionTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.io.File...']]"/>
+    
+    <!-- Error CS0534: 'FileUtils.CheckFileWritePermissionTask' does not implement inherited abstract member 'AsyncTask.DoInBackground(params Object[])' -->
+    <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.utils']/class[@name='FileUtils.CheckFileWritePermissionTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.io.File...']]"/>
+</metadata>
